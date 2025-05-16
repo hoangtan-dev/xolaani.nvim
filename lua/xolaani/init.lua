@@ -2,33 +2,33 @@ local M = {}
 
 ---@class XolaaniConfig
 M.config = {
-  undercurl = true,
-  commentStyle = { italic = false },
-  functionStyle = {},
-  keywordStyle = {},
-  statementStyle = {},
-  typeStyle = {},
-  dimInactive = false,
-  terminalColors = false,
-  ---@type { dark: string, light: string}
-  background = { dark = "abyss", light = "mist" },  --- light, mist theme coming soon
-  theme = "abyss",
+    undercurl = true,
+    commentStyle = { italic = false },
+    functionStyle = {},
+    keywordStyle = {},
+    statementStyle = {},
+    typeStyle = {},
+    dimInactive = false,
+    terminalColors = false,
+    ---@type { dark: string, light: string}
+    background = { dark = "abyss", light = "mist" }, --- light, mist theme coming soon
+    theme = "abyss",
 }
 
 ---@param theme? string
 function M.load(theme)
-  local config = M.config
-  theme = theme or M.config.background[vim.o.background] or M.config.theme
-  M._CURRENT_THEME = theme
+    local config = M.config
+    theme = theme or M.config.background[vim.o.background] or M.config.theme
+    M._CURRENT_THEME = theme
 
-  if vim.g.colors_name then
-    vim.cmd("hi clear")
-  end
+    if vim.g.colors_name then
+        vim.cmd("hi clear")
+    end
 
-  vim.g.colors_name = "xolaani"
-  vim.o.termguicolors = true
+    vim.g.colors_name = "xolaani"
+    vim.o.termguicolors = true
 
-  require("xolaani.highlights").apply(config)
+    require("xolaani.highlights").apply(config)
 end
 
 return M
