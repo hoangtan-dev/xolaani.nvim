@@ -1,24 +1,11 @@
 local M = {}
 
----@class XolaaniConfig
-M.config = {
-    undercurl = true,
-    commentStyle = { italic = false },
-    functionStyle = {},
-    keywordStyle = {},
-    statementStyle = {},
-    typeStyle = {},
-    dimInactive = false,
-    terminalColors = false,
-    ---@type { dark: string, light: string}
-    background = { dark = "abyss", light = "mist" }, --- light, mist theme coming soon
-    theme = "abyss",
-}
+local config = require("xolaani.config")
 
 ---@param theme? string
 function M.load(theme)
-    local config = M.config
-    theme = theme or M.config.background[vim.o.background] or M.config.theme
+    local opts = config.options
+    theme = theme or opts.background[vim.o.background] or opts.theme
     M._CURRENT_THEME = theme
 
     if vim.g.colors_name then
@@ -28,7 +15,10 @@ function M.load(theme)
     vim.g.colors_name = "xolaani"
     vim.o.termguicolors = true
 
-    require("xolaani.highlights").apply(config)
+    require("xolaani.highlights").apply(opts)
 end
+
+M.setup = config.setup
+M.colorscheme = M.load
 
 return M
