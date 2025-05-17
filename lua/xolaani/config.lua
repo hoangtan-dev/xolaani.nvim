@@ -1,5 +1,14 @@
 local M = {}
 
+---@class xolaani.Highlight
+---@field fg? string
+---@field bg? string
+---@field sp? string
+---@field bold? boolean
+---@field italic? boolean
+---@field underline? boolean
+---@field strikethrough? boolean
+
 ---@class xolaani.Plugins
 ---@field cmp? boolean
 ---@field gitsigns? boolean
@@ -17,14 +26,18 @@ local M = {}
 ---@field dimInactive? boolean
 ---@field background? xolaani.Background
 ---@field plugins? xolaani.Plugins
----@field theme? string
+---@field variant? string
+---@field transparent? boolean
+---@field highlights? table<string, xolaani.Highlight>
 
 ---@type xolaani.Config
 local default_config = {
     undercurl = true,
     dimInactive = false,
-    background = { dark = "abyss", light = "mist" }, -- "mist" coming soon
-    theme = "abyss",
+    background = { dark = "abyss", light = "mist" },
+    variant = "abyss",
+    transparent = false,
+
     plugins = {
         cmp = true,
         gitsigns = true,

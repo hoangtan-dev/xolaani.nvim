@@ -1,9 +1,9 @@
 local M = {}
 
----@param config? XolaaniConfig
+---@param config? xolaani.Config
 function M.setup(config)
     local palette = require("xolaani.colors")
-    config = config or require("kanagawa").config
+    config = config or require("xolaani").config
 
     return {
         -- *Comment	any comment
@@ -78,23 +78,10 @@ function M.setup(config)
         qfLineNr = { link = "LineNr" },
         qfFileName = { link = "Directory" },
 
-        -- htmlH1 = {},
-        -- htmlH2 = {},
-
-        -- mkdHeading = {},
-        -- mkdCode = {},
-        -- mkdCodeDelimiter = {},
-        -- mkdCodeStart = {},
-        -- mkdCodeEnd = {},
-        -- mkdLink = {},
-
         -- markdownHeadingDelimiter = {},
         markdownCode = { fg = palette.sangoGreen },
         markdownCodeBlock = { fg = palette.sangoGreen },
         markdownEscape = { fg = "NONE" },
-        -- markdownH1 = {},
-        -- markdownH2 = {},
-        -- markdownLinkText = {},
     }
 end
 

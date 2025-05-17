@@ -2,11 +2,11 @@ local M = {}
 
 local config = require("xolaani.config")
 
----@param theme? string
-function M.load(theme)
+---@param variant? string
+function M.load(variant)
     local opts = config.options
-    theme = theme or opts.background[vim.o.background] or opts.theme
-    M._CURRENT_THEME = theme
+    variant = variant or opts.background[vim.o.background] or opts.variant
+    M._CURRENT_VARIANT = variant
 
     if vim.g.colors_name then
         vim.cmd("hi clear")
