@@ -1,6 +1,6 @@
 local M = {}
 
----@param config XolaaniConfig
+---@param config xolaani.Config
 function M.setup(config)
     local palette = require("xolaani.colors")
 

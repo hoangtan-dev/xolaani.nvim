@@ -1,5 +1,10 @@
 local M = {}
 
+---@alias ColorSpec string RGB Hex string
+---@alias ColorTable table<string, ColorSpec>
+---@alias XolaaniColorsSpec { palette: ColorTable, theme: ColorTable }
+---@alias XolaaniColors { palette: PaletteColors, theme: ThemeColors }
+
 local config = require("xolaani.config")
 
 ---@param variant? string

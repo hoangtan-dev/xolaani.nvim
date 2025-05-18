@@ -1,4 +1,4 @@
----@class PaletteColors
+---@class xolaani.PaletteColors
 local palette = {
 
     -- yoru

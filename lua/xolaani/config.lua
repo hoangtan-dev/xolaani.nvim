@@ -16,6 +16,7 @@ local M = {}
 ---@field nvim_tree? boolean
 ---@field scrollbar? boolean
 ---@field treesitter? boolean
+---@field fzf_lua? boolean
 
 ---@class xolaani.Background
 ---@field dark string
@@ -45,6 +46,7 @@ local default_config = {
         nvim_tree = true,
         scrollbar = true,
         treesitter = true,
+        fzf_lua = true,
     },
 }
 
