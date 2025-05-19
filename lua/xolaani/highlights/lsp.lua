@@ -47,6 +47,11 @@ function M.setup(config)
         ["@lsp.typemod.variable.injected"] = { link = "@variable" },
 
         ["@lsp.typemod.function.readonly"] = { fg = palette.sangoBlue, bold = true },
+
+        -- LSP reference highlights
+        LspReferenceText = { fg = palette.sangoViolet, bold = true },
+        LspReferenceRead = { link = "LspReferenceText" },
+        LspReferenceWrite = { link = "LspReferenceText" },
     }
 end
 
