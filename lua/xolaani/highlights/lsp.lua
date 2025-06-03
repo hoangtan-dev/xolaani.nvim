@@ -49,9 +49,14 @@ function M.setup(config)
         ["@lsp.typemod.function.readonly"] = { fg = palette.sangoBlue, bold = true },
 
         -- LSP reference highlights
-        LspReferenceText = { fg = palette.sangoViolet, bold = true },
+        LspReferenceText = { bg = palette.yoru0 },
         LspReferenceRead = { link = "LspReferenceText" },
         LspReferenceWrite = { link = "LspReferenceText" },
+
+        LspSignatureActiveParameter = { fg = palette.sangoOrange },
+        LspCodeLens = { fg = palette.kuroiGray },
+        LspInlayHint = { fg = palette.kuroiGray },
+        LspInfoBorder = { fg = "none" },
     }
 end
 

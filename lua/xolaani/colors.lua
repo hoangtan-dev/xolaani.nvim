@@ -13,6 +13,7 @@ local palette = {
     tsuki2 = "#A7A9B5",
     tsuki3 = "#BDBFCB",
     tsuki4 = "#C6DFEC",
+    tsuki5 = "#FFFFFF",
 
     -- kuroi
     kuroiRed = "#4E0E0E",

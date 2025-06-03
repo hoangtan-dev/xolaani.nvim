@@ -17,6 +17,8 @@ local M = {}
 ---@field scrollbar? boolean
 ---@field treesitter? boolean
 ---@field fzf_lua? boolean
+---@field leap? boolean
+---@field mini? boolean
 
 ---@class xolaani.Background
 ---@field dark string
@@ -47,6 +49,8 @@ local default_config = {
         scrollbar = true,
         treesitter = true,
         fzf_lua = true,
+        leap = true,
+        mini = true,
     },
 }
 
