@@ -17,7 +17,7 @@ local palette = {
 
     -- kuroi
     kuroiRed = "#4E0E0E",
-    kuroiGreen = "#1C4642",
+    kuroiGreen = "#bbe67e",
     kuroiBlue = "#0D2C4E",
     kuroiYellow = "#6B5905",
     kuroiViolet = "#0E0D17",
@@ -32,6 +32,7 @@ local palette = {
     umiYellow = "#9D672F",
     umiMagenta = "#8D3F5A",
     umiCyan = "#49837E",
+    umiViolet = "#d4bfff",
 
     -- sango
     sangoRed = "#F05C60",

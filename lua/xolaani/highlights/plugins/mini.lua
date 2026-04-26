@@ -109,9 +109,14 @@ function M.setup(config)
         MiniStarterSection = { fg = palette.sangoBlue },
         MiniStarterQuery = { link = "MoreMsg" },
 
-        MiniStatuslineDevinfo = { link = "StatusLine" },
-        MiniStatuslineFileinfo = { link = "MiniStatuslineDevinfo" },
-        MiniStatuslineFilename = { link = "StatusLineNC" },
+        MiniStatuslineDevinfo = { fg = palette.kairoViolet, bg = "NONE" or palette.yoru1 },
+        MiniStatuslineFilename = {
+            fg = palette.umiViolet,
+            bg = "NONE" or palette.yoru1,
+            bold = true,
+        },
+        MiniStatuslineFileinfo = { link = "MiniStatuslineFileName" },
+        MiniStatuslineBlame = { fg = palette.kairoViolet, bg = "NONE" or palette.yoru1 },
         MiniStatuslineInactive = { link = "StatusLineNC" },
         MiniStatuslineModeCommand = { fg = palette.yoru1, bg = palette.kairoYellow, bold = true },
         MiniStatuslineModeInsert = { fg = palette.yoru1, bg = palette.sangoGreen, bold = true },

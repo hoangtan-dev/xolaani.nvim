@@ -19,6 +19,7 @@ local M = {}
 ---@field fzf_lua? boolean
 ---@field leap? boolean
 ---@field mini? boolean
+---@field snacks? boolean
 
 ---@class xolaani.Background
 ---@field dark string
@@ -51,6 +52,7 @@ local default_config = {
         fzf_lua = true,
         leap = true,
         mini = true,
+        snacks = true,
     },
 }
 
