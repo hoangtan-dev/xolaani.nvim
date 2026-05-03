@@ -64,7 +64,7 @@ function M.setup(config)
         TabLineFill = { bg = palette.yoru0 },
         TabLineSel = { bg = palette.yoru0 },
         Title = { bg = palette.yoru2, fg = palette.sangoMagenta },
-        Visual = { bg = palette.kuroiGray, fg = palette.tsuki3 },
+        Visual = { bg = palette.kuroiGray, fg = "NONE" },
         VisualNOS = { link = "Visual" },
         WarningMsg = { fg = palette.sangoYellow },
         Whitespace = { fg = palette.kuroiGray },

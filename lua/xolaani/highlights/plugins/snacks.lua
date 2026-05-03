@@ -18,7 +18,7 @@ function M.setup(config)
         SnacksIndent = { fg = palette.kuroiGray, nocombine = true },
         SnacksIndentChunk = { fg = palette.tsuki1, nocombine = true },
         SnacksIndentScope = { fg = palette.tsuki1, nocombine = true },
-        SnacksPickerListCursorLine = { fg = palette.tsuki4, bg = palette.yoru2 },
+        SnacksPickerListCursorLine = { fg = palette.yoru2, bg = palette.umiViolet },
         SnacksPickerInputBorder = { fg = palette.tsuki2, bg = "NONE" },
         SnacksPickerInputTitle = { fg = palette.sangoMagenta, bg = config.transparent and "NONE" or palette.yoru0 },
         SnacksPickerBoxTitle = { fg = palette.sangoViolet, bg = config.transparent and "NONE" or palette.yoru0 },
